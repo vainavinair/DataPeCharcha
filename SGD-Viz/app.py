@@ -258,6 +258,17 @@ def create_contour_plot(visualizer, show_batch=False, batch_indices=None):
             line=dict(color='yellow', width=3), marker=dict(size=4, color='red')
         ))
 
+    # <--- ADD THIS SECTION --->
+    # Global minimum marker
+    fig.add_trace(go.Scatter(
+        x=[visualizer.true_params[0]], 
+        y=[visualizer.true_params[1]],
+        mode='markers', 
+        name='Global Minimum',
+        marker=dict(size=12, color='cyan', symbol='star', line=dict(width=1, color='black'))
+    ))
+    # <--- END OF ADDED SECTION --->
+
     fig.update_layout(
         title='Combined Loss Landscape Contours',
         xaxis_title='θ₁', yaxis_title='θ₂',
