@@ -7,13 +7,16 @@ requires-python = ">=3.12"
 dependencies = [
     "graphviz>=0.21",
     "matplotlib>=3.10.6",
+    "mlflow>=3.4.0",
     "mlxtend>=0.23.4",
     "onnx>=1.19.0",
     "scikit-image>=0.25.2",
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
+    "tensorboard>=2.20.0",
     "torch>=2.8.0",
     "torchmetrics>=1.8.2",
     "torchvision>=0.23.0",
     "tqdm>=4.67.1",
+    "wandb>=0.22.2",
 ]
