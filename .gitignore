@@ -226,4 +226,4 @@ models/
 logs/
 logs.txt
 runs/
-recommendations\ml-100k
+recommendations/ml-100k/
